@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+    <!-- Bootstrap 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formulir Pendaftaran</h1>
+    <p>Dibuat oleh Febrian Syahroni</p>
+    <!-- Tab Konten -->
+    <div class="tab">
+      <button class="tablinks" onclick="open_Tab(event, 'Registrasi')">
+        Registrasi
+      </button>
+
+      <button class="tablinks" onclick="open_Tab(event, 'List Pendaftar')">
+        List Pendaftar
+      </button>
+    </div>
+
+    <!-- Konten -->
+    <div id="Registrasi" class="tabcontent">
+      <h3>Registrasi</h3>
+      <!-- Form pendaftaran -->
+      <form id="form-pendaftaran">
+        <div class="mb-3">
+          <label for="nama" class="form-label">Nama</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nama"
+            name="nama"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="umur" class="form-label">Umur</label>
+          <input
+            type="number"
+            class="form-control"
+            id="umur"
+            name="umur"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="uang-saku" class="form-label">Uang Saku</label>
+          <input
+            type="number"
+            class="form-control"
+            id="uang-saku"
+            name="uang-saku"
+            min="100000"
+            max="1000000"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <div id="List Pendaftar" class="tabcontent">
+      <!-- Tabel List Pendaftar -->
+      <table id="tabel-pendaftar" class="table table-striped">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Nama</th>
+            <th>Umur</th>
+            <th>Uang Saku</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <!-- Resume -->
+      <p id="resume" class="my-3"></p>
+    </div>
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <script src="node.js"></script>
+  </body>
+</html>
