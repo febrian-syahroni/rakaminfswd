@@ -67,13 +67,20 @@ button[type="submit"]:hover {
 
 #Registrasi {
   position: relative;
-  align-items: center;
-  width: 380px;
+  width: auto;
   height: auto;
-  background: #f2f2f2;
   border-radius: 8px;
   overflow: hidden;
   flex-direction: column;
+}
+
+h3 {
+  text-align: center;
+}
+
+form {
+  width: 25%;
+  margin: auto;
 }
 
 /* Styling List Pendaftar */
@@ -81,7 +88,9 @@ button[type="submit"]:hover {
 #tabel-pendaftar {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: auto;
+  margin: auto;
+  background-color: #ccc;
 }
 
 #tabel-pendaftar td,
@@ -89,6 +98,7 @@ button[type="submit"]:hover {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
+  margin: auto;
 }
 
 #tabel-pendaftar tr:nth-child(even) {
